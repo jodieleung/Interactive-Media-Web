@@ -1,0 +1,765 @@
+<!doctype html>
+
+<html>
+	<head> 
+		<title>comb</title>
+		<style>
+			<div {
+				position:absolute;
+			}
+			.trapezoid{
+				border-bottom: 170px solid black;
+				border-left: 30px solid transparent;
+				border-right: 30px solid transparent;
+				height: 0;
+				width: 602px;
+				position:absolute;
+				transform:rotate(180deg);
+				-webkit-border-bottom-right-radius:30px;
+				-webkit-border-bottom-left-radius:30px;
+			}
+			.cornerL {
+				width: 40px;
+				height: 35px;
+				background: black;
+				-moz-border-radius: 50px;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+				position:absolute;
+				left:11px;
+				top:8px;
+			}
+			.cornerR{
+				width: 40px;
+				height: 35px;
+				background: black;
+				-moz-border-radius: 50px;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+				position:absolute;
+				left:627px;
+				top:8px;
+			}
+			.cap {
+				width: 6px;
+				height: 6px;
+				background: black;
+				-moz-border-radius: 50px;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+				position:absolute;
+				left:38px;
+				top:175px;
+			}
+			.capA {
+				width: 6px;
+				height: 6px;
+				background: black;
+				-moz-border-radius: 50px;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+				position:absolute;
+				left:634px;
+				top:175px;
+			}
+			.trapezoid1{
+				border-bottom: 108px solid white;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				height: 0;
+				width: 10px;
+				position:absolute;
+				left:44px;
+				top:70px;
+			}
+			.semicircle1{
+			  	width: 10px;
+			    height: 5px; /* as the half of the width */
+			    background:white;
+			    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+			    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+			    position:absolute;
+			    left:49px;
+			    top:65px;
+			}
+			.cap1{
+				width: 10px;
+				height: 10px;
+				background: black;
+				-moz-border-radius: 50px;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+				position:absolute;
+				left:64px;
+				top:172px;
+			}
+			.trapezoid2{
+				border-bottom: 108px solid white;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				height: 0;
+				width: 10px;
+				position:absolute;
+				left:74px;
+				top:70px;
+			}
+			.semicircle2{
+			  	width: 10px;
+			    height: 5px; /* as the half of the width */
+			    background:white;
+			    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+			    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+			    position:absolute;
+			    left:79px;
+			    top:65px;
+			}
+			.cap2{
+				width: 10px;
+				height: 10px;
+				background: black;
+				-moz-border-radius: 50px;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+				position:absolute;
+				left:94px;
+				top:172px;
+			}
+			.trapezoid3{
+				border-bottom: 108px solid white;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				height: 0;
+				width: 10px;
+				position:absolute;
+				left:104px;
+				top:70px;
+			}
+			.semicircle3{
+			  	width: 10px;
+			    height: 5px; /* as the half of the width */
+			    background:white;
+			    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+			    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+			    position:absolute;
+			    left:109px;
+			    top:65px;
+			}
+			.cap3{
+				width: 10px;
+				height: 10px;
+				background: black;
+				-moz-border-radius: 50px;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+				position:absolute;
+				left:124px;
+				top:172px;
+			}
+			.trapezoid4{
+				border-bottom: 108px solid white;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				height: 0;
+				width: 10px;
+				position:absolute;
+				left:134px;
+				top:70px;
+			}
+			.semicircle4{
+			  	width: 10px;
+			    height: 5px; /* as the half of the width */
+			    background:white;
+			    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+			    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+			    position:absolute;
+			    left:139px;
+			    top:65px;
+			}
+			.cap4{
+				width: 10px;
+				height: 10px;
+				background: black;
+				-moz-border-radius: 50px;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+				position:absolute;
+				left:154px;
+				top:172px;
+			}
+			.trapezoid5{
+				border-bottom: 108px solid white;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				height: 0;
+				width: 10px;
+				position:absolute;
+				left:164px;
+				top:70px;
+			}
+			.semicircle5{
+			  	width: 10px;
+			    height: 5px; /* as the half of the width */
+			    background:white;
+			    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+			    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+			    position:absolute;
+			    left:169px;
+			    top:65px;
+			}
+			.cap5{
+				width: 10px;
+				height: 10px;
+				background: black;
+				-moz-border-radius: 50px;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+				position:absolute;
+				left:184px;
+				top:172px;
+			}
+			.trapezoid6{
+				border-bottom: 108px solid white;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				height: 0;
+				width: 10px;
+				position:absolute;
+				left:194px;
+				top:70px;
+			}
+			.semicircle6{
+			  	width: 10px;
+			    height: 5px; /* as the half of the width */
+			    background:white;
+			    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+			    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+			    position:absolute;
+			    left:199px;
+			    top:65px;
+			}
+			.cap6{
+				width: 10px;
+				height: 10px;
+				background: black;
+				-moz-border-radius: 50px;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+				position:absolute;
+				left:214px;
+				top:172px;
+			}
+			.trapezoid7{
+				border-bottom: 108px solid white;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				height: 0;
+				width: 10px;
+				position:absolute;
+				left:224px;
+				top:70px;
+			}
+			.semicircle7{
+			  	width: 10px;
+			    height: 5px; /* as the half of the width */
+			    background:white;
+			    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+			    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+			    position:absolute;
+			    left:229px;
+			    top:65px;
+			}
+			.cap7{
+				width: 10px;
+				height: 10px;
+				background: black;
+				-moz-border-radius: 50px;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+				position:absolute;
+				left:244px;
+				top:172px;
+			}
+			.trapezoid8{
+				border-bottom: 108px solid white;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				height: 0;
+				width: 10px;
+				position:absolute;
+				left:254px;
+				top:70px;
+			}
+			.semicircle8{
+			  	width: 10px;
+			    height: 5px; /* as the half of the width */
+			    background:white;
+			    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+			    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+			    position:absolute;
+			    left:259px;
+			    top:65px;
+			}
+			.cap8{
+				width: 10px;
+				height: 10px;
+				background: black;
+				-moz-border-radius: 50px;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+				position:absolute;
+				left:274px;
+				top:172px;
+			}
+			.trapezoid9{
+				border-bottom: 108px solid white;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				height: 0;
+				width: 10px;
+				position:absolute;
+				left:284px;
+				top:70px;
+			}
+			.semicircle9{
+			  	width: 10px;
+			    height: 5px; /* as the half of the width */
+			    background:white;
+			    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+			    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+			    position:absolute;
+			    left:289px;
+			    top:65px;
+			}
+			.cap9{
+				width: 10px;
+				height: 10px;
+				background: black;
+				-moz-border-radius: 50px;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+				position:absolute;
+				left:304px;
+				top:172px;
+			}
+			.trapezoid10{
+				border-bottom: 108px solid white;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				height: 0;
+				width: 10px;
+				position:absolute;
+				left:314px;
+				top:70px;
+			}
+			.semicircle10{
+			  	width: 10px;
+			    height: 5px; /* as the half of the width */
+			    background:white;
+			    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+			    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+			    position:absolute;
+			    left:319px;
+			    top:65px;
+			}
+			.cap10{
+				width: 10px;
+				height: 10px;
+				background: black;
+				-moz-border-radius: 50px;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+				position:absolute;
+				left:334px;
+				top:172px;
+			}
+			.trapezoid11{
+				border-bottom: 108px solid white;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				height: 0;
+				width: 10px;
+				position:absolute;
+				left:344px;
+				top:70px;
+			}
+			.semicircle11{
+			  	width: 10px;
+			    height: 5px; /* as the half of the width */
+			    background:white;
+			    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+			    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+			    position:absolute;
+			    left:349px;
+			    top:65px;
+			}
+			.cap11{
+				width: 10px;
+				height: 10px;
+				background: black;
+				-moz-border-radius: 50px;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+				position:absolute;
+				left:364px;
+				top:172px;
+			}
+			.trapezoid12{
+				border-bottom: 108px solid white;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				height: 0;
+				width: 10px;
+				position:absolute;
+				left:374px;
+				top:70px;
+			}
+			.semicircle12{
+			  	width: 10px;
+			    height: 5px; /* as the half of the width */
+			    background:white;
+			    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+			    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+			    position:absolute;
+			    left:379px;
+			    top:65px;
+			}
+			.cap12{
+				width: 10px;
+				height: 10px;
+				background: black;
+				-moz-border-radius: 50px;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+				position:absolute;
+				left:394px;
+				top:172px;
+			}
+			.trapezoid13{
+				border-bottom: 108px solid white;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				height: 0;
+				width: 10px;
+				position:absolute;
+				left:404px;
+				top:70px;
+			}
+			.semicircle13{
+			  	width: 10px;
+			    height: 5px; /* as the half of the width */
+			    background:white;
+			    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+			    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+			    position:absolute;
+			    left:409px;
+			    top:65px;
+			}
+			.cap13{
+				width: 10px;
+				height: 10px;
+				background: black;
+				-moz-border-radius: 50px;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+				position:absolute;
+				left:424px;
+				top:172px;
+			}
+			.trapezoid14{
+				border-bottom: 108px solid white;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				height: 0;
+				width: 10px;
+				position:absolute;
+				left:434px;
+				top:70px;
+			}
+			.semicircle14{
+			  	width: 10px;
+			    height: 5px; /* as the half of the width */
+			    background:white;
+			    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+			    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+			    position:absolute;
+			    left:439px;
+			    top:65px;
+			}
+			.cap14{
+				width: 10px;
+				height: 10px;
+				background: black;
+				-moz-border-radius: 50px;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+				position:absolute;
+				left:454px;
+				top:172px;
+			}
+			.trapezoid15{
+				border-bottom: 108px solid white;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				height: 0;
+				width: 10px;
+				position:absolute;
+				left:464px;
+				top:70px;
+			}
+			.semicircle15{
+			  	width: 10px;
+			    height: 5px; /* as the half of the width */
+			    background:white;
+			    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+			    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+			    position:absolute;
+			    left:469px;
+			    top:65px;
+			}
+			.cap15{
+				width: 10px;
+				height: 10px;
+				background: black;
+				-moz-border-radius: 50px;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+				position:absolute;
+				left:484px;
+				top:172px;
+			}
+			.trapezoid16{
+				border-bottom: 108px solid white;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				height: 0;
+				width: 10px;
+				position:absolute;
+				left:494px;
+				top:70px;
+			}
+			.semicircle16{
+			  	width: 10px;
+			    height: 5px; /* as the half of the width */
+			    background:white;
+			    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+			    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+			    position:absolute;
+			    left:499px;
+			    top:65px;
+			}
+			.cap16{
+				width: 10px;
+				height: 10px;
+				background: black;
+				-moz-border-radius: 50px;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+				position:absolute;
+				left:514px;
+				top:172px;
+			}
+			.trapezoid17{
+				border-bottom: 108px solid white;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				height: 0;
+				width: 10px;
+				position:absolute;
+				left:524px;
+				top:70px;
+			}
+			.semicircle17{
+			  	width: 10px;
+			    height: 5px; /* as the half of the width */
+			    background:white;
+			    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+			    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+			    position:absolute;
+			    left:529px;
+			    top:65px;
+			}
+			.cap17{
+				width: 10px;
+				height: 10px;
+				background: black;
+				-moz-border-radius: 50px;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+				position:absolute;
+				left:544px;
+				top:172px;
+			}
+			.trapezoid18{
+				border-bottom: 108px solid white;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				height: 0;
+				width: 10px;
+				position:absolute;
+				left:554px;
+				top:70px;
+			}
+			.semicircle18{
+			  	width: 10px;
+			    height: 5px; /* as the half of the width */
+			    background:white;
+			    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+			    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+			    position:absolute;
+			    left:559px;
+			    top:65px;
+			}
+			.cap18{
+				width: 10px;
+				height: 10px;
+				background: black;
+				-moz-border-radius: 50px;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+				position:absolute;
+				left:574px;
+				top:172px;
+			}
+			.trapezoid19{
+				border-bottom: 108px solid white;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				height: 0;
+				width: 10px;
+				position:absolute;
+				left:584px;
+				top:70px;
+			}
+			.semicircle19{
+			  	width: 10px;
+			    height: 5px; /* as the half of the width */
+			    background:white;
+			    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+			    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+			    position:absolute;
+			    left:589px;
+			    top:65px;
+			}
+			.cap19{
+				width: 10px;
+				height: 10px;
+				background: black;
+				-moz-border-radius: 50px;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+				position:absolute;
+				left:604px;
+				top:172px;
+			}
+			.trapezoid20{
+				border-bottom: 108px solid white;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				height: 0;
+				width: 10px;
+				position:absolute;
+				left:614px;
+				top:70px;
+			}
+			.semicircle20{
+			  	width: 10px;
+			    height: 5px; /* as the half of the width */
+			    background:white;
+			    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+			    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+			    position:absolute;
+			    left:619px;
+			    top:65px;
+			}
+		</style>
+	</head>
+		<body>
+			<div class="trapezoid"></div>
+
+			<div class="cornerL"></div>
+			<div class="cornerR"></div>
+
+			<div class="cap"></div>
+			<div class="capA"></div>
+			<div class="cap1"></div>
+			<div class="cap2"></div>
+			<div class="cap3"></div>
+			<div class="cap4"></div>
+			<div class="cap5"></div>
+			<div class="cap6"></div>
+			<div class="cap7"></div>
+			<div class="cap8"></div>
+			<div class="cap9"></div>
+			<div class="cap10"></div>
+			<div class="cap11"></div>
+			<div class="cap12"></div>
+			<div class="cap13"></div>
+			<div class="cap14"></div>
+			<div class="cap15"></div>
+			<div class="cap16"></div>
+			<div class="cap17"></div>
+			<div class="cap18"></div>
+			<div class="cap19"></div>
+			<div class="cap20"></div>
+
+			<div class="trapezoid1"></div>
+			<div class="semicircle1"></div>
+
+			<div class="trapezoid2"></div>
+			<div class="semicircle2"></div>
+
+			<div class="trapezoid3"></div>
+			<div class="semicircle3"></div>
+
+			<div class="trapezoid4"></div>
+			<div class="semicircle4"></div>
+
+			<div class="trapezoid5"></div>
+			<div class="semicircle5"></div>
+
+			<div class="trapezoid6"></div>
+			<div class="semicircle6"></div>
+
+			<div class="trapezoid7"></div>
+			<div class="semicircle7"></div>
+			
+			<div class="trapezoid8"></div>
+			<div class="semicircle8"></div>
+
+			<div class="trapezoid9"></div>
+			<div class="semicircle9"></div>
+			
+			<div class="trapezoid10"></div>
+			<div class="semicircle10"></div>
+
+			<div class="trapezoid11"></div>
+			<div class="semicircle11"></div>
+
+			<div class="trapezoid12"></div>
+			<div class="semicircle12"></div>
+
+			<div class="trapezoid13"></div>
+			<div class="semicircle13"></div>
+			
+			<div class="trapezoid14"></div>
+			<div class="semicircle14"></div>
+
+			<div class="trapezoid15"></div>
+			<div class="semicircle15"></div>
+			
+			<div class="trapezoid16"></div>
+			<div class="semicircle16"></div>
+
+			<div class="trapezoid17"></div>
+			<div class="semicircle17"></div>
+			
+			<div class="trapezoid18"></div>
+			<div class="semicircle18"></div>
+
+			<div class="trapezoid19"></div>
+			<div class="semicircle19"></div>
+			
+			<div class="trapezoid20"></div>
+			<div class="semicircle20"></div>
+		</body>
+</html>

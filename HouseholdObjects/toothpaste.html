@@ -1,0 +1,891 @@
+<!doctype html>
+
+<html>
+	<head> 
+		<title>toothpaste</title>
+		<style>
+
+			div {
+				position:absolute;
+			}
+			.captrap {
+				border-bottom: 18px solid black;
+				border-left: 6px solid transparent;
+				border-right: 6px solid transparent;
+				height: 10px;
+				width: 40px;
+				position:absolute;
+				left: 0px;
+				top: 160px;
+				transform:rotate(270deg);
+				-webkit-border-top-right-radius:20px;
+				-webkit-border-top-left-radius:20px;
+			}
+			.caprect {
+				width: 36px;
+				height: 50px;
+				background: black;
+				position:absolute;
+				left:43px;
+				top:149px;
+				-webkit-border-bottom-right-radius:4px;
+				-webkit-border-top-right-radius:4px;
+			}
+			.lip {
+				width: 5px;
+				height: 58px;
+				background: black;
+				-moz-border-radius: 200px / 100px;
+				-webkit-border-radius: 200px / 100px;
+				border-radius: 200px / 100px;
+				position:absolute;
+				top:143px;
+				left:38px;
+			}
+			.connectrect {
+				width: 4px;
+				height: 50px;
+				background: black;
+				position:absolute;
+				left:80px;
+				top:149px;
+				-webkit-border-radius:1px;
+			}
+			.connecttrap {
+				border-bottom: 33px solid black;
+				border-left: 45px solid transparent;
+				border-right: 45px solid transparent;
+				height: 10px;
+				width: 50px;
+				position:absolute;
+				left: 27px;
+				top: 152px;
+				transform:rotate(270deg);
+				-webkit-border-top-right-radius:20px;
+				-webkit-border-top-left-radius:20px;	
+			}
+			.tuberect {
+				width: 14px;
+				height: 143px;
+				background: black;
+				position:absolute;
+				left:117px;
+				top:102px;
+				-webkit-border-radius:5px;
+			}
+			.tubetrap {
+				border-bottom: 500px solid black;
+				border-left: 25px solid transparent;
+				border-right: 25px solid transparent;
+				height: 10px;
+				width: 143px;
+				position:absolute;
+				left: 276px;
+				top:-82px;
+				transform:rotate(270deg);
+				-webkit-border-top-right-radius:20px;
+				-webkit-border-top-left-radius:20px;	
+			}
+			.endtrap {
+				border-bottom: 8px solid black;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				height: 10px;
+				width: 193px;
+				position:absolute;
+				left: 518px;
+				top:165px;
+				transform:rotate(270deg);
+				-webkit-border-top-right-radius:20px;
+				-webkit-border-top-left-radius:20px;
+			}
+			.end {
+				width: 10px;
+				height: 202px;
+				background: black;
+				position:absolute;
+				left:628px;
+				top:73px;
+			}
+			.line1 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:76px;
+			}
+			.line2 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:79px;
+			}
+			.line3 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:82px;
+			}
+			.line4 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:85px;
+			}
+			.line5 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:88px;
+			}
+			.line6 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:91px;
+			}
+			.line7 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:94px;
+			}
+			.line8 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:97px;
+			}
+			.line9 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:100px;
+			}
+			.line10 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:103px;
+			}
+			.line11 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:106px;
+			}
+			.line12 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:109px;
+			}
+			.line13 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:112px;
+			}
+			.line14 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:115px;
+			}
+			.line15 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:118px;
+			}
+			.line16 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:121px;
+			}
+			.line17 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:124px;
+			}
+			.line18 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:127px;
+			}
+			.line19 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:130px;
+			}
+			.line20 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:133px;
+			}
+			.line21 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:136px;
+			}
+			.line22 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:139px;
+			}
+			.line23 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:142px;
+			}
+			.line24 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:145px;
+			}
+			.line25 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:148px;
+			}
+			.line26 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:151px;
+			}
+			.line27 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:154px;
+			}
+			.line28 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:157px;
+			}
+			.line29 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:160px;
+			}
+			.line30 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:163px;
+			}
+			.line31 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:166px;
+			}
+			.line32 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:169px;
+			}
+			.line33 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:172px;
+			}
+			.line34 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:175px;
+			}
+			.line35 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:178px;
+			}
+			.line36 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:181px;
+			}
+			.line37 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:184px;
+			}
+			.line38 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:187px;
+			}
+			.line39 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:190px;
+			}
+			.line40 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:193px;
+			}
+			.line41 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:196px;
+			}
+			.line42 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:199px;
+			}
+			.line43 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:202px;
+			}
+			.line44 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:205px;
+			}
+			.line45 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:208px;
+			}
+			.line46 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:211px;
+			}
+			.line47 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:214px;
+			}
+			.line48 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:217px;
+			}
+			.line49 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:220px;
+			}
+			.line50 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:223px;
+			}
+			.line51 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:226px;
+			}
+			.line52 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:229px;
+			}
+			.line53 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:232px;
+			}
+			.line54 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:235px;
+			}
+			.line55 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:238px;
+			}
+			.line56 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:241px;
+			}
+			.line57 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:244px;
+			}
+			.line58 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:247px;
+			}
+			.line59 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:250px;
+			}
+			.line60 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:253px;
+			}
+			.line61 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:256px;
+			}
+			.line62 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:259px;
+			}
+			.line63 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:262px;
+			}
+			.line64 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:265px;
+			}
+			.line65 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:268px;
+			}
+			.line66 {
+				width: 10px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:628px;
+				top:271px;
+			}
+			.label {
+				width: 250px;
+				height: 100px;
+				background: white;
+				-moz-border-radius: 100px / 50px;
+				-webkit-border-radius: 100px / 50px;
+				border-radius: 100px / 50px;
+				position:absolute;
+				left:225px;
+				top:123px;
+			}
+			.lineA {
+				width: 36px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:43px;
+				top:151px;
+			}
+			.lineB {
+				width: 36px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:43px;
+				top:154px;
+			}
+			.lineC {
+				width: 36px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:43px;
+				top:157px;
+			}
+			.lineD {
+				width: 36px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:43px;
+				top:160px;
+			}
+			.lineE {
+				width: 36px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:43px;
+				top:163px;
+			}
+			.lineF {
+				width: 36px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:43px;
+				top:166px;
+			}
+			.lineG {
+				width: 36px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:43px;
+				top:169px;
+			}
+			.lineH {
+				width: 36px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:43px;
+				top:172px;
+			}
+			.lineI {
+				width: 36px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:43px;
+				top:175px;
+			}
+			.lineJ {
+				width: 36px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:43px;
+				top:178px;
+			}
+			.lineK {
+				width: 36px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:43px;
+				top:181px;
+			}
+			.lineL {
+				width: 36px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:43px;
+				top:184px;
+			}
+			.lineM {
+				width: 36px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:43px;
+				top:187px;
+			}
+			.lineN {
+				width: 36px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:43px;
+				top:190px;
+			}
+			.lineO {
+				width: 36px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:43px;
+				top:193px;
+			}
+			.lineP {
+				width: 36px;
+				height: 1px;
+				background: white;
+				position:absolute;
+				left:43px;
+				top:196px;
+			}
+			.counterline {
+				display:block;
+			   width: 206px;
+			   height: 180px;
+/*			   background-color: red;*/
+			   -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+			   border-radius:         50%  50%  50%  50%  / 60%   60%   40%  40%;
+			   border: 1px solid white;
+			   top:90px;
+			   left:-99px;
+			   z-index:1;
+			   transform:scale(1.5) rotate(270deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="caprect"></div>
+		<div class="captrap"></div>
+		<div class="lip"></div>
+		<div class="connectrect"></div>
+		<div class="connecttrap"></div>
+		<div class="tuberect"></div>
+		<div class="tubetrap"></div>
+		<div class="endtrap"></div>
+		<div class="end"></div>
+		<div class="label"></div>
+		<div class="counterline"></div>
+
+		<div class="lineA"></div>
+		<div class="lineB"></div>
+		<div class="lineC"></div>
+		<div class="lineD"></div>
+		<div class="lineE"></div>
+		<div class="lineF"></div>
+		<div class="lineG"></div>
+		<div class="lineH"></div>
+		<div class="lineI"></div>
+		<div class="lineJ"></div>
+		<div class="lineK"></div>
+		<div class="lineL"></div>
+		<div class="lineM"></div>
+		<div class="lineN"></div>
+		<div class="lineO"></div>
+		<div class="lineP"></div>
+
+		<div class="line1"></div>
+		<div class="line2"></div>
+		<div class="line3"></div>
+		<div class="line4"></div>
+		<div class="line5"></div>
+		<div class="line6"></div>
+		<div class="line7"></div>
+		<div class="line8"></div>
+		<div class="line9"></div>
+		<div class="line10"></div>
+		<div class="line11"></div>
+		<div class="line12"></div>
+		<div class="line13"></div>
+		<div class="line14"></div>
+		<div class="line15"></div>
+		<div class="line16"></div>
+		<div class="line17"></div>
+		<div class="line18"></div>
+		<div class="line19"></div>
+		<div class="line20"></div>
+		<div class="line21"></div>
+		<div class="line22"></div>
+		<div class="line23"></div>
+		<div class="line24"></div>
+		<div class="line25"></div>
+		<div class="line26"></div>
+		<div class="line27"></div>
+		<div class="line28"></div>
+		<div class="line29"></div>
+		<div class="line30"></div>
+		<div class="line31"></div>
+		<div class="line32"></div>
+		<div class="line33"></div>
+		<div class="line34"></div>
+		<div class="line35"></div>
+		<div class="line36"></div>
+		<div class="line37"></div>
+		<div class="line38"></div>
+		<div class="line39"></div>
+		<div class="line40"></div>
+		<div class="line41"></div>
+		<div class="line42"></div>
+		<div class="line43"></div>
+		<div class="line44"></div>
+		<div class="line45"></div>
+		<div class="line46"></div>
+		<div class="line47"></div>
+		<div class="line48"></div>
+		<div class="line49"></div>
+		<div class="line50"></div>
+		<div class="line51"></div>
+		<div class="line52"></div>
+		<div class="line53"></div>
+		<div class="line54"></div>
+		<div class="line55"></div>
+		<div class="line56"></div>
+		<div class="line57"></div>
+		<div class="line58"></div>
+		<div class="line59"></div>
+		<div class="line60"></div>
+		<div class="line61"></div>
+		<div class="line62"></div>
+		<div class="line63"></div>
+		<div class="line64"></div>
+		<div class="line65"></div>
+		<div class="line66"></div>
+
+
+	</body>
+</html>
