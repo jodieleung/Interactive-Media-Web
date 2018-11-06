@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:700" rel="stylesheet');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet');
 
-body {cursor: ns-resize;}
+body {
+	cursor: ns-resize;
+}
 
 .glowbubble {
 	position:absolute;
@@ -33,6 +35,7 @@ body {cursor: ns-resize;}
         }
     }
 }
+
 @keyframes spin {
   100% {
     transform: rotate(360deg);
@@ -320,4 +323,17 @@ h2 {
 	top:4627px;
 	line-height:1.2em;
 	letter-spacing: 0;
+}
+
+@media (max-width:800px) {
+
+	.titleoutline1 {
+		width:50%;
+	}
+
+	#intro {
+		margin-left:1%
+		grid-template-columns: 1fr;
+	}
+
 }
