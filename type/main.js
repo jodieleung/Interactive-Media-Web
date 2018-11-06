@@ -27,7 +27,7 @@ $(document).mousemove(function(e){
 
     $(window).keydown(function(){			//SPACEBAR
         if (event.keyCode == 32){
-        $('img[src="gifs/kick.gif"]')
+        $('img[src="https://s2.gifyu.com/images/kick.gif"]')
         	.addClass("imagemultiply")
         	.css({
         		"left":mX,
@@ -43,7 +43,7 @@ $(document).mousemove(function(e){
     $(window).keydown(function(){			
 
         if (event.keyCode == 90){			//Z
-        $('img[src="gifs/waves.gif"]')
+        $('img[src="https://s2.gifyu.com/images/waves.gif"]')
         	.addClass("imagemultiply")
         	.css({
         		"left":mX,
@@ -57,7 +57,7 @@ $(document).mousemove(function(e){
 
     $(window).keydown(function(){			//X
         if (event.keyCode == 88){
-        $('img[src="gifs/semicircle.gif"]')
+        $('img[src="https://s2.gifyu.com/images/semicircle.gif"]')
         	.addClass("imagemultiply")
         	.css({
         		"left":mX,
@@ -70,7 +70,7 @@ $(document).mousemove(function(e){
 
     $(window).keydown(function(){			//C
         if (event.keyCode == 67){
-        $('img[src="gifs/octagon.gif"]')
+        $('img[src="https://s2.gifyu.com/images/octagon.gif"]')
         	.addClass("octagon")
         	.css({
         		"left":mX,
@@ -83,7 +83,7 @@ $(document).mousemove(function(e){
 
     $(window).keydown(function(){			//V
         if (event.keyCode == 86){
-        $('img[src="gifs/rectoutlines.gif"]')
+        $('img[src="https://s2.gifyu.com/images/rectoutlines.gif"]')
         	.addClass("image")
         	.css({
         		"left":mX,
@@ -96,7 +96,7 @@ $(document).mousemove(function(e){
 
     $(window).keydown(function(){			//B
         if (event.keyCode == 66){
-        $('img[src="gifs/spots.gif"]')
+        $('img[src="https://s2.gifyu.com/images/spots.gif"]')
         	.addClass("imagemultiply")
         	.css({
         		"left":mX,
@@ -109,7 +109,7 @@ $(document).mousemove(function(e){
 
     $(window).keydown(function(){			//N
         if (event.keyCode == 78){
-        $('img[src="gifs/shapes1.gif"]')
+        $('img[src="https://s2.gifyu.com/images/shapes1.gif"]')
         	.addClass("imagemultiply")
         	.css({
         		"left":mX,
@@ -123,7 +123,7 @@ $(document).mousemove(function(e){
 
     $(window).keydown(function(){			//M
         if (event.keyCode == 77){
-        $('img[src="gifs/clap.gif"]')
+        $('img[src="https://s2.gifyu.com/images/clap.gif"]')
         	.addClass("imagemultiply")
         	.css({
         		"left":mX,
