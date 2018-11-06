@@ -133,18 +133,3 @@ $(document).mousemove(function(e){
         document.getElementById('clap').play();
     	}
     });
-
-
-    $(window).keydown(function(){           //A
-        if (event.keyCode == 65){
-        $('img[src="gifs/.gif"]')
-            .addClass("imagemultiply")
-            .css({
-                "left":mX,
-                "top":mY
-            })
-            .show();
-        document.getElementById('maracas').play();
-        }
-    });
-
