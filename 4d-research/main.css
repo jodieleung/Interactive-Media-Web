@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+h1 {
+	font-family:'Roboto', sans-serif;
+	text-align: center;
+	color:#f6a8c0;
+	padding-top:50px;
+}
+
+.title1 {
+	font-family:'Roboto Mono', monospace;
+	font-size:1.5em;
+	text-align:center;
+}
+
+.title2 {
+	font-family:'Roboto Mono', monospace;
+	font-size:1.5em;
+	text-align:center;
+	padding-top:1000px;
+
+}
+
+.title3 {
+	font-family:'Roboto Mono', monospace;
+	font-size:1.5em;
+	text-align:center;
+	padding-top:800px;
+
+}
+
+.caption {
+	font-family:'Roboto Mono', monospace;
+	font-size:.8em;
+	text-align:center;
+	padding-top:520px;
+
+}
+
+#soundcloud {
+	position:absolute;
+	align-items: right;
+	left:70%;
+	top:0;
+	width: 30%;
+	height:auto;
+
+}
+
+video {
+	height:auto;
+	position:absolute;
+}
+
+#quiet-web {
+	left:8px;
+	width:50%;
+	height:auto;
+	opacity:0.95;
+}
+
+#performance {
+	width:50%;
+	height:auto;
+	left:50%;
+	opacity:0.95;
+}
+
+#moon-juice {
+	top:650px;
+	width:50%;
+	height:auto;
+}
+
+#meditation-oasis {
+	top:650px;
+	left:50%;
+	width:50%;
+	height:auto;
+}
+
+#fitness {
+	width:20%;
+	height:auto;
+	left:20%;
+
+}
+
+#calm {
+	width:20%;
+	left: 40%;
+	height:auto;
+}
+
+#headspace {
+	width:20%;
+	left: 60%;
+	height:auto;
+}
+
+#amanda {
+	position:absolute;
+	top:2100px;
+	left:140px;
+}
+
+#ayurveda {
+	position:absolute;
+	top:2100px;
+	left:50%;
+}
+
+
+#canoe {
+	width:20%;
+	height:auto;
+	left:20%;
+
+}
+
+#interactive-plants {
+	width:20%;
+	left: 40%;
+	height:auto;
+}
+
+#water {
+	width:20%;
+	left: 60%;
+	height:auto;
+}
+
+#shadow {
+	left:8px;
+	width:50%;
+	height:auto;
+	top:3600px;
+}
+
+#sunset {
+	width:50%;
+	height:auto;
+	left:50%;
+	top:3600px;
+}
+
+#thailand {
+	width:50%;
+	height:auto;
+	left:25%;
+	top:4100px;
+	align-content:center;
+}
+
+
