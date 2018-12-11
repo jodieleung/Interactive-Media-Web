@@ -284,6 +284,7 @@ img:hover {
 	font-size:13px;
 	line-height:1em;
 	text-align:center;
+	opacity:0.5;
 }
 .second {
 	top: 550px;
