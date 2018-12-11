@@ -346,6 +346,18 @@ img:hover {
 	max-width:400px;
 }
 
+#roadline {
+	top:2210px;
+	left:-420px;
+	width:auto;
+	height:2500px;
+	z-index:-1000;
+}
+
+#roadline:hover {
+	transform: scale(1); 
+}
+
 .fourth {
 	top: 4700px;
 	left: 500px;
@@ -392,13 +404,6 @@ img:hover {
 	z-index:-2;
 }
 
-#roadline {
-	top:2210px;
-	left:-420px;
-	width:auto;
-	height:2500px;
-
-}
 
 .fifth {
 	left: 2500px;
